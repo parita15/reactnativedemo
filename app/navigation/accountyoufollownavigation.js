@@ -3,7 +3,6 @@ import {createAppContainer} from 'react-navigation';
 import Followers from '../container/Settingfiles/Privacyfiles/accountyoufollownavigationpages/followers';
 import Following from '../container/Settingfiles/Privacyfiles/accountyoufollownavigationpages/following';
 import Constant from '../helper/themeHelper';
-
 const AppNavigator = createMaterialTopTabNavigator(
     {
         Followers,

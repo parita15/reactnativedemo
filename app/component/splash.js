@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {View, Image, AsyncStorage} from 'react-native';
-
+let a;
 export default class Splash extends Component{
     constructor(props){
         super(props)
