@@ -1,4 +1,4 @@
-import {GET_IMAGES_HOME} from '../actions/types';
+import {GET_IMAGES_HOME,SET_IMAGES_HOME} from '../actions/types';
 
 const INITIAL_STATE = {
     imagesData: [],
@@ -7,6 +7,11 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case GET_IMAGES_HOME:
+            return {
+                ...state,
+                imagesData : action.payload,
+            };
+        case SET_IMAGES_HOME:
             return {
                 ...state,
                 imagesData : action.payload,

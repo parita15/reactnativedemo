@@ -32,6 +32,35 @@ import Gettingstarted from '../container/Settingfiles/Securityfiles/Twofactoraut
 import Twofactorauthentication from '../container/Settingfiles/Securityfiles/twofactorauthentication';
 import Phonenumber from '../container/Settingfiles/Securityfiles/Twofactorauthenticationfiles/phonenumber';
 import Emailfrominstagram from '../container/Settingfiles/Securityfiles/emailfrominstagram';
+import Accessdata from '../container/Settingfiles/Securityfiles/accessdata';
+import Accountprivacychanges from '../container/Settingfiles/Securityfiles/acessdatafiles/accountprivacychanges';
+import Passwordchanges from '../container/Settingfiles/Securityfiles/acessdatafiles/passwordchanges';
+import Formeremailaddress from '../container/Settingfiles/Securityfiles/acessdatafiles/formeremailaddress';
+import Formerphonenumbers from '../container/Settingfiles/Securityfiles/acessdatafiles/formerphonenumbers';
+import Formerusername from '../container/Settingfiles/Securityfiles/acessdatafiles/formerusername';
+import Formerfullname from '../container/Settingfiles/Securityfiles/acessdatafiles/formerfullname';
+import Formerbiotexts from '../container/Settingfiles/Securityfiles/acessdatafiles/formerbiotexts';
+import Formerlinksinbio from '../container/Settingfiles/Securityfiles/acessdatafiles/formerlinksinbio';
+import Currentfollowrequests from '../container/Settingfiles/Securityfiles/acessdatafiles/currentfollowrequests';
+import Accountfollowingyou from '../container/Settingfiles/Securityfiles/acessdatafiles/accountsfollowingyou';
+import Accountsyoufollow from '../container/Settingfiles/Securityfiles/acessdatafiles/accountyoufollow';
+import Hashtagsyoufollow from '../container/Settingfiles/Securityfiles/acessdatafiles/hashtagsyoufollow';
+import Accountsyoublocked from '../container/Settingfiles/Securityfiles/acessdatafiles/accountsyoublocked';
+import Logins from '../container/Settingfiles/Securityfiles/acessdatafiles/logins';
+import Logouts from '../container/Settingfiles/Securityfiles/acessdatafiles/logouts';
+import Searchhistory from '../container/Settingfiles/Securityfiles/acessdatafiles/searchhistory';
+import Polls from '../container/Settingfiles/Securityfiles/acessdatafiles/polls';
+import Emojisliders from '../container/Settingfiles/Securityfiles/acessdatafiles/emojisliders';
+import Questions from '../container/Settingfiles/Securityfiles/acessdatafiles/questions';
+import Countdowns from '../container/Settingfiles/Securityfiles/acessdatafiles/countdowns';
+import Quizzes from '../container/Settingfiles/Securityfiles/acessdatafiles/quizzes';
+import Adsinterest from '../container/Settingfiles/Securityfiles/acessdatafiles/adsinterests';
+import Downloadyourdata from '../container/Settingfiles/Securityfiles/downloadyourdata';
+import Appsandwebsites from '../container/Settingfiles/Securityfiles/appsnadwebsite';
+import Active from '../container/Settingfiles/Securityfiles/appsandwebsitefiles/active';
+import Expire from '../container/Settingfiles/Securityfiles/appsandwebsitefiles/expire';
+import SearchHistory from '../container/Settingfiles/Securityfiles/searchhistory';
+import Adsactivity from '../container/Settingfiles/Adsfiles/Adactivity';
 import Add from '../container/add';
 import Notification from '../container/notification';
 import User from '../container/userHome';
@@ -117,6 +146,35 @@ const AppNavigator = createStackNavigator({
     Gettingstarted,
     Phonenumber,
     Emailfrominstagram,
+    Accessdata,
+    Accountprivacychanges,
+    Passwordchanges,
+    Formeremailaddress,
+    Formerphonenumbers,
+    Formerusername,
+    Formerfullname,
+    Formerbiotexts,
+    Formerlinksinbio,
+    Currentfollowrequests,
+    Accountfollowingyou,
+    Accountsyoufollow,
+    Hashtagsyoufollow,
+    Accountsyoublocked,
+    Logins,
+    Logouts,
+    Searchhistory,
+    Polls,
+    Emojisliders,
+    Questions,
+    Countdowns,
+    Quizzes,
+    Adsinterest,
+    Downloadyourdata,
+    Appsandwebsites,
+    Active,
+    Expire,
+    SearchHistory,
+    Adsactivity,
     TabNavigator,
 },{
     headerMode:'none',

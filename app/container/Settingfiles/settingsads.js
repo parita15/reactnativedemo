@@ -35,7 +35,7 @@ export default class AdsBasic extends Component {
                             <AppTouchableOpacity
                                 title={'Ad Activity'}
                                 exStyle={ exStyle}
-                                onPress={() => {this.props.navigation.navigate('Settings')}}
+                                onPress={() => {this.props.navigation.navigate('Adsactivity')}}
                             />
                         </View>
                         <View >

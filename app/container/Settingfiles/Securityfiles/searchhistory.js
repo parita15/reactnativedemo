@@ -1,41 +1,48 @@
 import React,{Component} from 'react';
-import {SafeAreaView, View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import {widthPercentageToDP as wp,heightPercentageToDP as hp} from './../../../helper/responsivescreen'
+import {SafeAreaView, View,Text, TouchableOpacity,StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp,heightPercentageToDP as hp} from '../../../helper/responsivescreen'
 import Icon from 'react-native-vector-icons/AntDesign';
-import Constant from './../../../helper/themeHelper'
-import AppNavigator from './../../../navigation/emailfrominstagramnavigation';
-import {createAppContainer} from 'react-navigation';
-const AppIndex = createAppContainer(AppNavigator);
+import Constant from '../../../helper/themeHelper'
 
-export default class EmailfrominstagramBasic extends Component{
-    constructor(props){
+
+
+export default class SearchhistoryBasic extends Component {
+    constructor(props) {
         super(props)
     }
-    render(){
-        const {viewContainer,text,exStyle} = styles;
+
+    render() {
+        const {viewContainer, text,textHistorty} = styles;
         return (
             <SafeAreaView style={{flex: 1}}>
-
                 <View style={viewContainer}>
                     <View>
                         <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                            <Icon name="left" size={25}  style={{marginLeft:5}}/>
+                            <Icon name="left" size={25} style={{marginLeft: 5}}/>
                         </TouchableOpacity>
                     </View>
                     <View style={{width: wp('80%')}}>
                         <Text style={text}>
-                            {'Emails From Instagram'}
+                            {'Search History'}
                         </Text>
                     </View>
                 </View>
-                <View style={{flex:1}}>
-                    <AppIndex/>
+                <View>
+                    <Text style={textHistorty}>
+                        {'No search history'}
+                    </Text>
                 </View>
             </SafeAreaView>
         );
     }
 }
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
+    textHistorty:{
+        marginLeft:15,
+        marginTop:20,
+        fontSize: wp('6%'),
+        color:Constant.color.lightGray
+    },
     exStyle:{
         height:hp('7%'),
         borderBottomColor: 'transparent',

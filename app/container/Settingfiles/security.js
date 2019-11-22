@@ -83,7 +83,7 @@ export default class SecurityBasic extends Component {
                                     title={'Access Data'}
                                     exStyle={{height:hp('7%'),borderBottomColor: 'transparent'}}
                                     icon={<EvilIcon name="chart" size={40} style={{marginLeft: 5}}/>}
-                                    onPress={() => {this.props.navigation.navigate('Settings')}}
+                                    onPress={() => {this.props.navigation.navigate('Accessdata')}}
                                 />
                             </View>
                             <View>
@@ -91,7 +91,7 @@ export default class SecurityBasic extends Component {
                                     title={'Download Data'}
                                     exStyle={{height:hp('7%'),borderBottomColor: 'transparent'}}
                                     icon={<AntIcon name="download" size={37}  style={{marginLeft: 5}}/>}
-                                    onPress={() => {this.props.navigation.navigate('Settings')}}
+                                    onPress={() => {this.props.navigation.navigate('Downloadyourdata')}}
                                 />
                             </View>
                             <View>
@@ -99,7 +99,7 @@ export default class SecurityBasic extends Component {
                                     title={'Apps and Websites'}
                                     exStyle={{height:hp('7%'),borderBottomColor: 'transparent'}}
                                     icon={<AntIcon name="laptop" size={40} style={{marginLeft: 5}} />}
-                                    onPress={() => {this.props.navigation.navigate('Settings')}}
+                                    onPress={() => {this.props.navigation.navigate('Appsandwebsites')}}
                                 />
                             </View>
                             <View>
@@ -107,7 +107,7 @@ export default class SecurityBasic extends Component {
                                     title={'Search History'}
                                     exStyle={{height:hp('7%'),borderBottomColor: 'transparent'}}
                                     icon={<EvilIcon name="search" size={35} style={{marginLeft: 5}} />}
-                                    onPress={() => {this.props.navigation.navigate('Settings')}}
+                                    onPress={() => {this.props.navigation.navigate('SearchHistory')}}
                                 />
                             </View>
                         </View>

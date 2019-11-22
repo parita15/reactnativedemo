@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import CameIcon from 'react-native-vector-icons/SimpleLineIcons';
 import {connect} from "react-redux";
 import {getimageHome} from "../actions/imageshomeAction";
+import {setimageHome} from "../actions/imageshomeAction";
 
 let item =[];
 const DATA=[

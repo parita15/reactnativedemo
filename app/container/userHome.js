@@ -6,11 +6,10 @@ import {
     Text,
     StyleSheet,
     Image,
-    ScrollView, FlatList, Modal,TouchableHighlight, Alert
+    ScrollView, FlatList, Modal, Alert
 } from 'react-native';
 import Constant from './../helper/themeHelper';
 import {widthPercentageToDP as wp,heightPercentageToDP as hp} from './../helper/responsivescreen';
-import FontIcon from 'react-native-vector-icons/FontAwesome5';
 import Icon from 'react-native-vector-icons/AntDesign';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -62,7 +61,8 @@ class userHomeBasic extends Component{
         super(props);
         this.state={
             users:[],
-            result: []
+            result: [],
+            modalVisible: false,
         }
     }
 
@@ -77,10 +77,6 @@ class userHomeBasic extends Component{
             debugger
         })
     }
-
-    state = {
-        modalVisible: false,
-    };
 
     setModalVisible(visible) {
         this.setState({modalVisible: visible});
